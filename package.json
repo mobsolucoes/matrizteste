@@ -11,6 +11,7 @@
     "dev:demo": "concurrently \"npm run server:demo\" \"npm run dev\"",
     "dev:external": "concurrently \"npm run server\" \"vite --host 0.0.0.0\"",
     "build": "vite build",
+    "build:vercel": "vite build",
     "preview": "vite preview --host 0.0.0.0",
     "start": "node server.js",
     "lint": "eslint ."

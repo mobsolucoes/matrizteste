@@ -106,6 +106,87 @@ pnpm run dev:full
 - `GET /api/weights` - Obter pesos atuais
 - `PUT /api/weights` - Atualizar pesos
 
+## 🚀 Deploy no Vercel
+
+### Pré-requisitos:
+- Conta no [Vercel](https://vercel.com)
+- MongoDB configurado e acessível
+- Projeto no GitHub/GitLab
+
+### Passos para Deploy:
+
+#### 1. Preparar o Projeto
+```bash
+# Instalar dependências
+pnpm install
+
+# Testar build local
+pnpm run build
+```
+
+#### 2. Configurar Variáveis de Ambiente no Vercel
+
+No dashboard do Vercel, adicione as seguintes variáveis:
+
+```env
+MONGODB_URI=mongodb://mongo:102030@161.97.73.53:27017/?tls=false
+VITE_API_URL=https://seu-projeto.vercel.app/api
+```
+
+#### 3. Deploy via Vercel CLI
+```bash
+# Instalar Vercel CLI
+npm i -g vercel
+
+# Login no Vercel
+vercel login
+
+# Deploy
+vercel
+
+# Para produção
+vercel --prod
+```
+
+#### 4. Deploy via GitHub (Recomendado)
+
+1. **Push do código para GitHub**
+2. **Conectar repositório no Vercel**
+3. **Configurar variáveis de ambiente**
+4. **Deploy automático**
+
+### Estrutura para Vercel:
+
+```
+matriz-desempenho-atualizada/
+├── api/
+│   └── index.js          # Serverless functions
+├── src/
+│   └── ...               # Frontend React
+├── vercel.json           # Configuração Vercel
+├── package.json
+└── vite.config.js
+```
+
+### URLs após Deploy:
+
+- **Frontend**: `https://seu-projeto.vercel.app`
+- **API**: `https://seu-projeto.vercel.app/api`
+
+### Troubleshooting:
+
+#### Erro de CORS:
+- Verificar se `cors()` está configurado no backend
+- Confirmar se as origens estão corretas
+
+#### Erro de MongoDB:
+- Verificar se a URI do MongoDB está correta
+- Confirmar se o MongoDB está acessível externamente
+
+#### Build falha:
+- Verificar se todas as dependências estão no `package.json`
+- Confirmar se o Node.js version está compatível
+
 ## 🚀 Deploy e Configuração Externa
 
 ### Para rodar com acesso externo (mesmo IP/host):

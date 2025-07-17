@@ -2,6 +2,12 @@ import { useState, useEffect } from 'react'
 
 // Detectar o host atual e usar a mesma porta do servidor
 const getApiBaseUrl = () => {
+  // Em produção (Vercel), usar a variável de ambiente
+  if (import.meta.env.VITE_API_URL) {
+    return import.meta.env.VITE_API_URL
+  }
+  
+  // Em desenvolvimento, usar o host atual
   const host = window.location.hostname
   const port = '3001' // Porta do servidor backend
   return `http://${host}:${port}/api`
