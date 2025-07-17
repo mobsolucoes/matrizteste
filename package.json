@@ -10,10 +10,13 @@
     "dev:full": "concurrently \"npm run server\" \"npm run dev\"",
     "dev:demo": "concurrently \"npm run server:demo\" \"npm run dev\"",
     "dev:external": "concurrently \"npm run server\" \"vite --host 0.0.0.0\"",
+    "dev:unified": "node server-unified.js",
+    "dev:simple": "node server-simple.js",    
     "build": "vite build",
     "build:vercel": "vite build",
     "preview": "vite preview --host 0.0.0.0",
     "start": "node server.js",
+    "start:unified": "NODE_ENV=production node server-unified.js",
     "lint": "eslint ."
   },
   "dependencies": {

@@ -7,9 +7,9 @@ const getApiBaseUrl = () => {
     return import.meta.env.VITE_API_URL
   }
   
-  // Em desenvolvimento, usar o host atual
+  // Em desenvolvimento, usar a porta do servidor backend
   const host = window.location.hostname
-  const port = '3001' // Porta do servidor backend
+  const port = '3000' // Porta do servidor backend
   return `http://${host}:${port}/api`
 }
 
