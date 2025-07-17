@@ -171,4 +171,12 @@ app.use('*', (req, res) => {
 });
 
 // Exportar para Vercel
-export default app; 
+export default app;
+
+// Para compatibilidade com Vercel
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = process.env.PORT || 3001;
+  app.listen(PORT, () => {
+    console.log(`🚀 API rodando na porta ${PORT}`);
+  });
+} 

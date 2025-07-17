@@ -14,6 +14,7 @@
     "dev:simple": "node server-simple.js",    
     "build": "vite build",
     "build:vercel": "vite build",
+    "vercel-build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
     "start": "node server.js",
     "start:unified": "NODE_ENV=production node server-unified.js",
