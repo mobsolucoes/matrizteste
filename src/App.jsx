@@ -494,7 +494,7 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-orange-400 to-orange-600 p-4">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-white mb-2">Matriz de Desempenho Scansource 3D</h1>
+          <h1 className="text-4xl font-bold text-white mb-2">Matriz de Desempenho Scansource 4D</h1>
           <p className="text-xl text-white/90">Análise de Talentos: Competência, Resultado, Cultura e Potencial</p>
           
           {/* Indicador de persistência */}
