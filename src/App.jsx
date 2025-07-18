@@ -753,7 +753,7 @@ function App() {
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="radar">Gráfico Radar 3D</SelectItem>
+                        <SelectItem value="radar">Gráfico Radar 4D</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -851,7 +851,7 @@ function App() {
             <Card>
               <CardHeader>
                 <CardTitle>
-                  Gráfico Radar 3D - {viewMode === 'area' ? 'Por Área' : 'Por Funcionários'}
+                  Gráfico Radar 4D - {viewMode === 'area' ? 'Por Área' : 'Por Funcionários'}
                 </CardTitle>
               </CardHeader>
               <CardContent>

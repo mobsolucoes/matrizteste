@@ -1,10 +1,10 @@
-# Matriz de Desempenho Scansource 3D
+# Matriz de Desempenho Scansource 4D
 
-Sistema de análise de talentos com avaliação 3D: Competência, Resultado, Cultura e Potencial.
+Sistema de análise de talentos com avaliação 4D: Competência, Resultado, Cultura e Potencial.
 
 ## 🚀 Funcionalidades
 
-- **Avaliação 3D**: Sistema de pontuação baseado em 4 critérios
+- **Avaliação 4D**: Sistema de pontuação baseado em 4 critérios
 - **Gráficos Radar**: Visualização interativa dos dados
 - **Configuração de Pesos**: Personalização dos critérios de avaliação
 - **Gestão de Funcionários**: CRUD completo de colaboradores
